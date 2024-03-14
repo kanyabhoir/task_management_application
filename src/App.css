@@ -1,0 +1,281 @@
+.header {
+  background-color: #f7ca18;
+  align-items: "center";
+  justify-content: center;
+  display: flex;
+  padding: 23px;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 50px;
+}
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* ............................TaskForm style.......................... */
+
+
+.task-form {
+  margin-bottom: 20px;
+}
+
+.add{
+  margin-top: 10px;
+}
+.task-form input[type="text"],
+.task-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.task-form button {
+  background-color: #f7ca18;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+
+.task {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+}
+
+.task button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  margin: 5px;
+}
+
+.button-group button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  display: flex;
+}
+
+.task {
+  padding: 8px;
+  margin: 8px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.task.dragging {
+  background-color: #d4edda;
+}
+
+.droppable-area {
+  margin: 8px;
+  padding: 8px;
+  background-color: #e9ecef;
+  border: 1px dashed #adb5bd;
+  border-radius: 4px;
+}
+
+/* ...................RegistrationPage style.................. */
+
+
+
+
+.task-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-card:hover {
+  background-color: #e9ecef;
+}
+
+.task-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #343a40;
+}
+
+.task-card p {
+  margin-top: 8px;
+  color: #000;
+}
+
+.task-card span {
+  display: block;
+  margin-top: 8px;
+  color: #000;
+}
+
+.task-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-card button:hover {
+  background-color: #0056b3;
+}
+/* ...................RegistrationPage style.................. */
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="submit"],
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* ...................LogoutButton style.................. */
+.logout-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.logout-button button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logout-button button:hover {
+  background-color: #0056b3;
+}
+
+/*.......................... Responsive styles............................. */
+@media screen and (max-width: 768px) {
+  .task {
+    padding: 8px;
+  }
+  .header {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .task-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .task-form input,
+  .task-form textarea {
+    width: 100%;
+  }
+  .task-filters {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .task-filters button {
+    margin: 5px;
+  }
+  .logout-button {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .logout-button button {
+    padding: 6px 12px;
+  }
+  .button-group {
+    margin: 5px 0;
+  }
+}
